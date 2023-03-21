@@ -46,5 +46,5 @@ def loginform():
 
 if __name__ == '__main__':
   createDBConnection()
-  app.run(port=1122,debug=True)
+  app.run()
   
