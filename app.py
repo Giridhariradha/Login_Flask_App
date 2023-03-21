@@ -28,6 +28,7 @@ def loginform():
     email = request.form["email"]
     msg = ""
     print(username , passwd , email)
+    createDBConnection()
     response_Data = findByUserName(collObj,username)
     print(response_Data)
     if response_Data:
